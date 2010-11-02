@@ -242,3 +242,54 @@ void Wizard::touchedBy(string toucherType)
 	if(toucherType == "FlyingStar")
 		hitPoints -= FLYINGSTAR_DAMAGE;
 }
+
+void Wizard::drawOn(RenderWindow& Window, ImageManager& ImageManager_)
+{
+	Sprite RuneSprite;
+	float x, y;
+	Window.Draw(*this);
+	
+	list<RuneType>::iterator currentRune = RuneQueue.begin();
+	for(int i=0; i<RuneQueue.size(); i++)
+	{
+		if(*currentRune != NONE)
+		{
+			switch(*currentRune)
+			{
+				case RED:
+					RuneSprite.SetImage(*ImageManager_.Get("Data/Spells/RedGem.png"));
+					break;
+				case BLUE:
+					RuneSprite.SetImage(*ImageManager_.Get("Data/Spells/BlueGem.png"));
+					break;
+				case YELLOW:
+					RuneSprite.SetImage(*ImageManager_.Get("Data/Spells/YellowGem.png"));
+					break;
+				case GREEN:
+					RuneSprite.SetImage(*ImageManager_.Get("Data/Spells/GreenGem.png"));
+					break;
+			}
+			x = this->GetPosition().x - (WINDOW_WIDTH/2);
+			x += ((WINDOW_WIDTH-RUNE_WIDTH) / RuneQueue.size()) * i;
+			y = this->GetPosition().y + (WINDOW_HEIGHT/2) - RUNE_HEIGHT;
+			RuneSprite.SetPosition(x, y);
+			Window.Draw(RuneSprite);
+			switch(*currentRune)
+			{
+				case RED:
+					ImageManager_.release("Data/Spells/RedGem.png");
+					break;
+				case BLUE:
+					ImageManager_.release("Data/Spells/BlueGem.png");
+					break;
+				case YELLOW:
+					ImageManager_.release("Data/Spells/YellowGem.png");
+					break;
+				case GREEN:
+					ImageManager_.release("Data/Spells/GreenGem.png");
+					break;
+			}
+		}
+		currentRune++;
+	}
+}

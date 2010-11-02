@@ -30,7 +30,7 @@ struct Tile
 class TileMap
 {
 	public:
-	TileMap(const char* sourceFile, ImageManager& ImageManager_);
+	TileMap(std::string sourceFile, ImageManager& ImageManager_);
 	bool changeTile(int x, int y, int newValue);
 	void draw(sf::RenderWindow &Window);
 	void clear(ImageManager& ImageManader_);

@@ -21,8 +21,8 @@ int main()
 	ImageManager ImageManager_;
 	CollisionManager CollisionManager_;
 	
-	std::string currentArena = "bridge";
-	TileMap TileMap_("bridge.xml", ImageManager_);
+	std::string currentArena = "bridge.xml";
+	TileMap TileMap_(currentArena, ImageManager_);
 	
 	std::vector<Wizard> Wizards;
 	Wizards.push_back(Wizard(sf::Vector2f(10*TILE_WIDTH, 10*TILE_USED_HEIGHT), ImageManager_, "Boy.png"));
@@ -95,7 +95,12 @@ int main()
 		
         TileMap_.draw(Window);
 		for(int i=0; i<Wizards.size(); i++)
-			Window.Draw(Wizards[i]);
+		{
+			if(i == currentWizard)
+				Wizards[i].drawOn(Window, ImageManager_);
+			else
+				Window.Draw(Wizards[i]);
+		}
 		for(int i=0; i<Spells.size(); i++)
 			Window.Draw(*Spells[i]);
 		

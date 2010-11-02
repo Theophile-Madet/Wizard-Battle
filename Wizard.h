@@ -34,6 +34,7 @@ class Wizard : public AnimatedSprite, public Collisionable
 	void ActUsingNetwork(/*Add stuff here*/);
 	void touchedBy(std::string toucherType);
 	bool clear(ImageManager& ImageManager);
+	void drawOn(sf::RenderWindow& Window, ImageManager& ImageManager_);
 	
 	private:
 	int hitPoints;

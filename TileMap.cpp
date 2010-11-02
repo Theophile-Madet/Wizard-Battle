@@ -8,7 +8,7 @@
 using namespace std;
 using namespace sf;
 
-TileMap::TileMap(const char* sourceFile, ImageManager &ImageManager_)
+TileMap::TileMap(string sourceFile, ImageManager &ImageManager_)
 {
 	//Load the XML source file.
 	string str = "Data/Arenas/";
