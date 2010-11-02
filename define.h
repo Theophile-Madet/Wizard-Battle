@@ -5,8 +5,8 @@
 #ifndef DEF_DEFINE
 #define DEF_DEFINE
 
-#define WINDOW_WIDTH 1000
-#define WINDOW_HEIGHT 800
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 600
 
 #define TILE_HEIGHT 171
 #define TILE_WIDTH 101
