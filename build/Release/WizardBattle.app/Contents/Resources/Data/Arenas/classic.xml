@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" />
+<Arena name="Classic">
+	<TileSet>
+		<Tile num="0" file="Grass.png" isBlockingCharacters="false" isBlockingSpells="false" />
+		<Tile num="1" file="Wall.png" isBlockingCharacters="true" isBlockingSpells="true" />
+		<Tile num="2" file="Water.png" isBlockingCharacters="true" isBlockingSpells="false" />
+		<Tile num="3" file="Stone.png" isBlockingCharacters="false" isBlockingSpells="false" />
+		<Tile num="4" file="Wood.png" isBlockingCharacters="false" isBlockingSpells="false" />
+	</TileSet>
+	<Map>
+		<Line TileLine="11111111111111111111" />
+		<Line TileLine="14444444411333333221" />
+		<Line TileLine="14000000411333333321" />
+		<Line TileLine="14000000411333323331" />
+		<Line TileLine="14002200443333003331" />
+		<Line TileLine="14002200443333003321" />
+		<Line TileLine="14000000411233332221" />
+		<Line TileLine="14000000411222322221" />
+		<Line TileLine="14444444411222222221" />
+		<Line TileLine="11111111111111111111" />
+	</Map>
+</Arena>

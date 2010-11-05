@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" />
+<Arena name="Bridge">
+	<TileSet>
+		<Tile num="0" file="Wall.png" isBlockingCharacters="true" isBlockingSpells="true" />
+		<Tile num="1" file="Water.png" isBlockingCharacters="true" isBlockingSpells="false" />
+		<Tile num="2" file="Stone.png" isBlockingCharacters="false" isBlockingSpells="false" />
+		<Tile num="3" file="Wood.png" isBlockingCharacters="false" isBlockingSpells="false" />
+	</TileSet>
+	<Map>
+		<Line TileLine="00000000000000000000" />
+		<Line TileLine="01111111111111111110" />
+		<Line TileLine="01111111111111111110" />
+		<Line TileLine="01113333333333331110" />
+		<Line TileLine="01133333333333333110" />
+		<Line TileLine="01133333333333333110" />
+		<Line TileLine="01133311133111333110" />
+		<Line TileLine="01133311133111333110" />
+		<Line TileLine="01133311222211333110" />
+		<Line TileLine="01133333222233333110" />
+		<Line TileLine="01133333222233333110" />
+		<Line TileLine="01133311222211333110" />
+		<Line TileLine="01133311133111333110" />
+		<Line TileLine="01133311133111333110" />
+		<Line TileLine="01133333333333333110" />
+		<Line TileLine="01133333333333333110" />
+		<Line TileLine="01113333333333331110" />
+		<Line TileLine="01111111111111111110" />
+		<Line TileLine="01111111111111111110" />
+		<Line TileLine="00000000000000000000" />
+	</Map>
+</Arena>
+

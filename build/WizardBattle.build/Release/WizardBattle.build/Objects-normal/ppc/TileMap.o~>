@@ -1,0 +1,3 @@
+/Users/quentinperrot/WizardBattle/TileMap.cpp:11: error: prototype for 'TileMap::TileMap(std::string, ImageManager&)' does not match any in class 'TileMap'
+/Users/quentinperrot/WizardBattle/TileMap.h:31: error: candidates are: TileMap::TileMap(const TileMap&)
+/Users/quentinperrot/WizardBattle/TileMap.h:33: error:                 TileMap::TileMap(const char*, ImageManager&)
