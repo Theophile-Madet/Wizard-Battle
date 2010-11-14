@@ -1,7 +1,0 @@
-/Users/quentinperrot/WizardBattle/servermain.cpp: In function 'int main()':
-/Users/quentinperrot/WizardBattle/servermain.cpp:19: error: expected `;' before 'sf'
-/Users/quentinperrot/WizardBattle/servermain.cpp:20: error: 'Window' was not declared in this scope
-/Users/quentinperrot/WizardBattle/servermain.cpp:97: error: no matching function for call to 'TileMap::draw(<type error>)'
-/Users/quentinperrot/WizardBattle/TileMap.h:35: note: candidates are: void TileMap::draw(sf::RenderWindow&)
-/Users/quentinperrot/WizardBattle/servermain.cpp:101: error: no matching function for call to 'Wizard::drawOn(<type error>, ImageManager&)'
-/Users/quentinperrot/WizardBattle/Wizard.h:37: note: candidates are: void Wizard::drawOn(sf::RenderWindow&, ImageManager&)
